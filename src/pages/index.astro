@@ -2,17 +2,51 @@
 import Layout from '../layouts/Layout.astro';
 
 const markets = [
-  { code: 'MY', flag: '\u{1F1F2}\u{1F1FE}', name: 'Malaysia', status: 'active' as const },
-  { code: 'SG', flag: '\u{1F1F8}\u{1F1EC}', name: 'Singapore', status: 'active' as const },
-  { code: 'BN', flag: '\u{1F1E7}\u{1F1F3}', name: 'Brunei', status: 'active' as const },
-  { code: 'AU', flag: '\u{1F1E6}\u{1F1FA}', name: 'Australia', status: 'planned' as const },
-  { code: 'US', flag: '\u{1F1FA}\u{1F1F8}', name: 'United States', status: 'planned' as const },
-  { code: 'EU', flag: '\u{1F1EA}\u{1F1FA}', name: 'Europe', status: 'planned' as const },
+  {
+    code: 'MY',
+    flag: '\u{1F1F2}\u{1F1FE}',
+    name: 'Malaysia',
+    status: 'active' as const,
+  },
+  {
+    code: 'SG',
+    flag: '\u{1F1F8}\u{1F1EC}',
+    name: 'Singapore',
+    status: 'active' as const,
+  },
+  {
+    code: 'BN',
+    flag: '\u{1F1E7}\u{1F1F3}',
+    name: 'Brunei',
+    status: 'active' as const,
+  },
+  {
+    code: 'AU',
+    flag: '\u{1F1E6}\u{1F1FA}',
+    name: 'Australia',
+    status: 'planned' as const,
+  },
+  {
+    code: 'US',
+    flag: '\u{1F1FA}\u{1F1F8}',
+    name: 'United States',
+    status: 'planned' as const,
+  },
+  {
+    code: 'EU',
+    flag: '\u{1F1EA}\u{1F1FA}',
+    name: 'Europe',
+    status: 'planned' as const,
+  },
 ];
 
 const categories = [
   { code: 'FSH', name: 'Muslim Fashion', note: 'Hijab, pashmina, gamis' },
-  { code: 'BTY', name: 'Beauty & Personal Care', note: 'Skincare & daily care' },
+  {
+    code: 'BTY',
+    name: 'Beauty & Personal Care',
+    note: 'Skincare & daily care',
+  },
   { code: 'BBY', name: 'Baby & Kids Products', note: 'Everyday essentials' },
   { code: 'EDU', name: 'Educational Toys', note: 'Learning & play' },
   { code: 'HOM', name: 'Home & Living', note: 'Household goods' },
@@ -30,124 +64,243 @@ const channels = [
 ];
 
 const testimonials = [
-  { quote: 'They handle the marketing and delivery into Malaysia for us. We just ship to their hub and our hijab line sells out across the causeway.', who: 'Rina Hapsari', role: 'Founder \u00B7 Modest fashion label, Bandung' },
-  { quote: 'Reaching Singapore customers used to feel impossible for a small skincare brand. Now our products land on doorsteps there every week.', who: 'Dewi Anggraini', role: 'Owner \u00B7 Beauty & skincare, Yogyakarta' },
-  { quote: 'Clear reporting, fast payouts, and they actually understand cross-border. Our educational toys finally have a market beyond Indonesia.', who: 'Bambang Sutrisno', role: 'Director \u00B7 Kids & learning products, Surabaya' },
+  {
+    quote:
+      'They handle the marketing and delivery into Malaysia for us. We just ship to their hub and our hijab line sells out across the causeway.',
+    who: 'Rina Hapsari',
+    role: 'Founder \u00B7 Modest fashion label, Bandung',
+  },
+  {
+    quote:
+      'Reaching Singapore customers used to feel impossible for a small skincare brand. Now our products land on doorsteps there every week.',
+    who: 'Dewi Anggraini',
+    role: 'Owner \u00B7 Beauty & skincare, Yogyakarta',
+  },
+  {
+    quote:
+      'Clear reporting, fast payouts, and they actually understand cross-border. Our educational toys finally have a market beyond Indonesia.',
+    who: 'Bambang Sutrisno',
+    role: 'Director \u00B7 Kids & learning products, Surabaya',
+  },
 ];
 
 const faqs = [
-  { q: 'Who is Sahabat Export for?', a: "Two groups: Indonesian sellers who want their products reaching customers abroad, and fulfillment, logistics, and payment partners who want to support cross-border trade into Southeast Asia. The website's primary focus is partnering with the latter to expand our network." },
-  { q: 'Which markets do you currently serve?', a: 'We are actively serving Malaysia, Singapore, and Brunei today. Australia, the United States, and Europe are on our planned roadmap as the fulfillment network scales.' },
-  { q: 'How do products actually reach customers abroad?', a: 'We market directly to consumers through Facebook Ads, WhatsApp, and marketplaces, then fulfill orders through our cross-border network \u2014 warehousing, freight, and local last-mile delivery, with local payment or cash-on-delivery where available.' },
-  { q: 'What kind of partners are you looking for?', a: 'Warehousing and storage, fulfillment (pick & pack), freight and logistics, last-mile delivery, payment and COD collection, and marketplace or e-commerce service providers across Southeast Asia.' },
-  { q: 'How do we start a conversation?', a: "Fill in the partnership inquiry form below, or reach us directly on WhatsApp or email. Tell us about your service, coverage, and capacity, and we'll follow up." },
+  {
+    q: 'Who is Sahabat Export for?',
+    a: "Two groups: Indonesian sellers who want their products reaching customers abroad, and fulfillment, logistics, and payment partners who want to support cross-border trade into Southeast Asia. The website's primary focus is partnering with the latter to expand our network.",
+  },
+  {
+    q: 'Which markets do you currently serve?',
+    a: 'We are actively serving Malaysia, Singapore, and Brunei today. Australia, the United States, and Europe are on our planned roadmap as the fulfillment network scales.',
+  },
+  {
+    q: 'How do products actually reach customers abroad?',
+    a: 'We market directly to consumers through Facebook Ads, WhatsApp, and marketplaces, then fulfill orders through our cross-border network \u2014 warehousing, freight, and local last-mile delivery, with local payment or cash-on-delivery where available.',
+  },
+  {
+    q: 'What kind of partners are you looking for?',
+    a: 'Warehousing and storage, fulfillment (pick & pack), freight and logistics, last-mile delivery, payment and COD collection, and marketplace or e-commerce service providers across Southeast Asia.',
+  },
+  {
+    q: 'How do we start a conversation?',
+    a: "Fill in the partnership inquiry form below, or reach us directly on WhatsApp or email. Tell us about your service, coverage, and capacity, and we'll follow up.",
+  },
 ];
 ---
 
 <Layout
-  title="Sahabat Export — Indonesian products to Malaysia & Singapore"
-  description="Sahabat Export sells Indonesian products to customers in Malaysia and Singapore through digital marketing, marketplaces, and cross-border fulfillment. Bersama menuju pasar dunia."
+  title='Sahabat Export — Indonesian products to Malaysia & Singapore'
+  description='Sahabat Export sells Indonesian products to customers in Malaysia and Singapore through digital marketing, marketplaces, and cross-border fulfillment. Bersama menuju pasar dunia.'
 >
   <!-- HEADER -->
-  <header class="topbar" id="topbar">
-    <div class="topbar-inner">
-      <a href="#top" class="brand" aria-label="Sahabat Export — back to top">
-        <img src="/assets/logo.png" alt="Sahabat Export — Bersama Menuju Pasar Dunia" class="brand-logo" />
+  <header class='topbar' id='topbar'>
+    <div class='topbar-inner'>
+      <a href='#top' class='brand' aria-label='Sahabat Export — back to top'>
+        <img
+          src='/assets/logo.png'
+          alt='Sahabat Export — Bersama Menuju Pasar Dunia'
+          class='brand-logo'
+        />
       </a>
-      <nav class="nav" aria-label="Page sections">
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#markets">Markets</a>
-          <a href="#products">Products</a>
-          <a href="#operate">How we work</a>
-          <a href="#faq">FAQ</a>
+      <nav class='nav' aria-label='Page sections'>
+        <div class='nav-links'>
+          <a href='#about'>About</a>
+          <a href='#markets'>Markets</a>
+          <a href='#products'>Products</a>
+          <a href='#operate'>How we work</a>
+          <a href='#faq'>FAQ</a>
         </div>
-        <a href="#contact" class="btn btn-gold">Partner with us <span class="arrow">&rarr;</span></a>
+        <a href='#contact' class='btn btn-gold'
+          >Partner with us <span class='arrow'>&rarr;</span></a
+        >
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id='top'>
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow on-dark">Cross-border e-commerce &middot; Indonesia &rarr; Southeast Asia</p>
-            <h1>Indonesian products,<br />delivered to <span class="gold">Malaysia</span> &amp; <span class="gold">Singapore</span></h1>
-            <p class="lede">
-              Sahabat Export sells Indonesian products directly to customers across Southeast Asia
-              through digital marketing, online marketplaces, and a growing cross-border
-              fulfillment network.
+    <section class='hero'>
+      <div class='hero-inner'>
+        <div class='hero-grid'>
+          <div class='hero-copy'>
+            <p class='eyebrow on-dark'>
+              Cross-border e-commerce &middot; Indonesia &rarr; Southeast Asia
             </p>
-            <div class="hero-cta">
-              <a href="#contact" class="btn btn-gold">Partner with us <span class="arrow">&rarr;</span></a>
-              <a href="#operate" class="btn btn-ghost-light">See how we work</a>
+            <h1>
+              Indonesian products,<br />delivered to <span class='gold'
+                >Malaysia</span
+              > &amp; <span class='gold'>Singapore</span>
+            </h1>
+            <p class='lede'>
+              Sahabat Export sells Indonesian products directly to customers
+              across Southeast Asia through digital marketing, online
+              marketplaces, and a growing cross-border fulfillment network.
+            </p>
+            <div class='hero-cta'>
+              <a href='#contact' class='btn btn-gold'
+                >Partner with us <span class='arrow'>&rarr;</span></a
+              >
+              <a href='#operate' class='btn btn-ghost-light'>See how we work</a>
             </div>
           </div>
 
           <!-- globe emblem -->
-          <div class="hero-art" aria-hidden="true">
-            <div class="globe-wrap">
-              <svg class="globe-layer" viewBox="0 0 460 460" aria-hidden="true">
+          <div class='hero-art' aria-hidden='true'>
+            <div class='globe-wrap'>
+              <svg class='globe-layer' viewBox='0 0 460 460' aria-hidden='true'>
                 <defs>
-                  <radialGradient id="gGlobe" cx="38%" cy="30%" r="78%">
-                    <stop offset="0%" stop-color="#14538f" />
-                    <stop offset="55%" stop-color="#0b2d52" />
-                    <stop offset="100%" stop-color="#061d39" />
+                  <radialGradient id='gGlobe' cx='38%' cy='30%' r='78%'>
+                    <stop offset='0%' stop-color='#14538f'></stop>
+                    <stop offset='55%' stop-color='#0b2d52'></stop>
+                    <stop offset='100%' stop-color='#061d39'></stop>
                   </radialGradient>
-                  <radialGradient id="gGlow" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stop-color="rgba(217,165,49,0.30)" />
-                    <stop offset="100%" stop-color="rgba(217,165,49,0)" />
+                  <radialGradient id='gGlow' cx='50%' cy='50%' r='50%'>
+                    <stop offset='0%' stop-color='rgba(217,165,49,0.30)'></stop>
+                    <stop offset='100%' stop-color='rgba(217,165,49,0)'></stop>
                   </radialGradient>
-                  <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#a9761a" />
-                    <stop offset="50%" stop-color="#d9a531" />
-                    <stop offset="100%" stop-color="#f1cb63" />
+                  <linearGradient id='gGold' x1='0' y1='0' x2='1' y2='1'>
+                    <stop offset='0%' stop-color='#a9761a'></stop>
+                    <stop offset='50%' stop-color='#d9a531'></stop>
+                    <stop offset='100%' stop-color='#f1cb63'></stop>
                   </linearGradient>
                 </defs>
-                <circle cx="230" cy="230" r="205" fill="url(#gGlow)" />
-                <g class="orbit-spin">
-                  <circle cx="230" cy="230" r="197" fill="none" stroke="url(#gGold)" stroke-width="1" stroke-dasharray="2 13" opacity="0.55" />
-                  <circle cx="230" cy="33" r="3" fill="#f1cb63" />
+                <circle cx='230' cy='230' r='205' fill='url(#gGlow)'></circle>
+                <g class='orbit-spin'>
+                  <circle
+                    cx='230'
+                    cy='230'
+                    r='197'
+                    fill='none'
+                    stroke='url(#gGold)'
+                    stroke-width='1'
+                    stroke-dasharray='2 13'
+                    opacity='0.55'></circle>
+                  <circle cx='230' cy='33' r='3' fill='#f1cb63'></circle>
                 </g>
-                <circle cx="230" cy="230" r="150" fill="url(#gGlobe)" stroke="rgba(241,203,99,0.55)" stroke-width="1.5" />
+                <circle
+                  cx='230'
+                  cy='230'
+                  r='150'
+                  fill='url(#gGlobe)'
+                  stroke='rgba(241,203,99,0.55)'
+                  stroke-width='1.5'></circle>
               </svg>
 
-              <img class="globe-layer globe-map" src="/assets/globe-dots-zoom2.svg" alt="" aria-hidden="true" />
+              <img
+                class='globe-layer globe-map'
+                src='/assets/globe-dots-zoom2.svg'
+                alt=''
+                aria-hidden='true'
+              />
 
-              <svg class="globe-layer" viewBox="0 0 460 460" aria-hidden="true">
+              <svg class='globe-layer' viewBox='0 0 460 460' aria-hidden='true'>
                 <defs>
-                  <linearGradient id="gGold2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#a9761a" />
-                    <stop offset="50%" stop-color="#d9a531" />
-                    <stop offset="100%" stop-color="#f1cb63" />
+                  <linearGradient id='gGold2' x1='0' y1='0' x2='1' y2='1'>
+                    <stop offset='0%' stop-color='#a9761a'></stop>
+                    <stop offset='50%' stop-color='#d9a531'></stop>
+                    <stop offset='100%' stop-color='#f1cb63'></stop>
                   </linearGradient>
-                  <clipPath id="clipGlobe2"><circle cx="230" cy="230" r="150" /></clipPath>
+                  <clipPath id='clipGlobe2'
+                    ><circle cx='230' cy='230' r='150'></circle></clipPath
+                  >
                 </defs>
-                <g clip-path="url(#clipGlobe2)" stroke="rgba(159,180,194,0.15)" fill="none" stroke-width="1">
-                  <ellipse cx="230" cy="230" rx="150" ry="60" />
-                  <ellipse cx="230" cy="230" rx="60" ry="150" />
-                  <line x1="80" y1="230" x2="380" y2="230" />
+                <g
+                  clip-path='url(#clipGlobe2)'
+                  stroke='rgba(159,180,194,0.15)'
+                  fill='none'
+                  stroke-width='1'
+                >
+                  <ellipse cx='230' cy='230' rx='150' ry='60'></ellipse>
+                  <ellipse cx='230' cy='230' rx='60' ry='150'></ellipse>
+                  <line x1='80' y1='230' x2='380' y2='230'></line>
                 </g>
-                <circle class="se-halo" cx="230" cy="188" r="60" fill="none" stroke="#f1cb63" stroke-width="1.2" stroke-dasharray="2 7" opacity="0.5" />
-                <g fill="none" stroke="url(#gGold2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6">
-                  <path class="trade-arc" d="M 230 230 Q 209 203 199.4 174.2" />
-                  <path class="trade-arc" d="M 230 230 Q 218 208 211.9 184.7" />
-                  <path class="trade-arc" d="M 230 230 Q 263 203 278.7 164" />
+                <circle
+                  class='se-halo'
+                  cx='230'
+                  cy='188'
+                  r='60'
+                  fill='none'
+                  stroke='#f1cb63'
+                  stroke-width='1.2'
+                  stroke-dasharray='2 7'
+                  opacity='0.5'></circle>
+                <g
+                  fill='none'
+                  stroke='url(#gGold2)'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-dasharray='2 6'
+                >
+                  <path class='trade-arc' d='M 230 230 Q 209 203 199.4 174.2'
+                  ></path>
+                  <path class='trade-arc' d='M 230 230 Q 218 208 211.9 184.7'
+                  ></path>
+                  <path class='trade-arc' d='M 230 230 Q 263 203 278.7 164'
+                  ></path>
                 </g>
-                <g class="nodes">
-                  <circle cx="199.4" cy="174.2" r="4" fill="url(#gGold2)" stroke="#061d39" stroke-width="1" />
-                  <circle cx="211.9" cy="184.7" r="4" fill="url(#gGold2)" stroke="#061d39" stroke-width="1" />
-                  <circle cx="278.7" cy="164" r="4" fill="url(#gGold2)" stroke="#061d39" stroke-width="1" />
-                  <circle cx="230" cy="230" r="5" fill="url(#gGold2)" stroke="#061d39" stroke-width="1" />
-                  <circle class="node-pulse" cx="230" cy="230" r="5.5" fill="none" stroke="#f1cb63" stroke-width="2" />
+                <g class='nodes'>
+                  <circle
+                    cx='199.4'
+                    cy='174.2'
+                    r='4'
+                    fill='url(#gGold2)'
+                    stroke='#061d39'
+                    stroke-width='1'></circle>
+                  <circle
+                    cx='211.9'
+                    cy='184.7'
+                    r='4'
+                    fill='url(#gGold2)'
+                    stroke='#061d39'
+                    stroke-width='1'></circle>
+                  <circle
+                    cx='278.7'
+                    cy='164'
+                    r='4'
+                    fill='url(#gGold2)'
+                    stroke='#061d39'
+                    stroke-width='1'></circle>
+                  <circle
+                    cx='230'
+                    cy='230'
+                    r='5'
+                    fill='url(#gGold2)'
+                    stroke='#061d39'
+                    stroke-width='1'></circle>
+                  <circle
+                    class='node-pulse'
+                    cx='230'
+                    cy='230'
+                    r='5.5'
+                    fill='none'
+                    stroke='#f1cb63'
+                    stroke-width='2'></circle>
                 </g>
-                <g class="globe-label">
-                  <text x="191" y="170" text-anchor="end">KUL</text>
-                  <text x="204" y="192" text-anchor="end">SIN</text>
-                  <text x="288" y="161" text-anchor="start">BWN</text>
-                  <text x="230" y="250" text-anchor="middle">JKT</text>
+                <g class='globe-label'>
+                  <text x='191' y='170' text-anchor='end'>KUL</text>
+                  <text x='204' y='192' text-anchor='end'>SIN</text>
+                  <text x='288' y='161' text-anchor='start'>BWN</text>
+                  <text x='230' y='250' text-anchor='middle'>JKT</text>
                 </g>
               </svg>
             </div>
@@ -155,210 +308,297 @@ const faqs = [
         </div>
 
         <!-- route motif -->
-        <svg class="route" viewBox="0 0 620 78" role="img" aria-label="Trade route from Jakarta to Kuala Lumpur, Singapore, and Brunei Darussalam">
-          <path class="route-flow" d="M 22 60 C 180 -8, 430 -8, 598 52" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
-          <circle cx="22" cy="60" r="5.5" fill="currentColor" />
-          <circle cx="202" cy="15" r="5.5" fill="currentColor" />
-          <circle cx="405" cy="12" r="5.5" fill="currentColor" />
-          <circle cx="598" cy="52" r="5.5" fill="currentColor" />
-          <text x="22" y="28" class="route-label route-city" text-anchor="start">JAKARTA</text>
-          <text x="202" y="44" class="route-label route-city" text-anchor="middle">KUALA LUMPUR</text>
-          <text x="405" y="41" class="route-label route-city" text-anchor="middle">SINGAPORE</text>
-          <text x="598" y="30" class="route-label route-city" text-anchor="end">BRUNEI</text>
+        <svg
+          class='route'
+          viewBox='0 0 620 78'
+          role='img'
+          aria-label='Trade route from Jakarta to Kuala Lumpur, Singapore, and Brunei Darussalam'
+        >
+          <path
+            class='route-flow'
+            d='M 22 60 C 180 -8, 430 -8, 598 52'
+            fill='none'
+            stroke='currentColor'
+            stroke-width='2.2'
+            stroke-linecap='round'></path>
+          <circle cx='22' cy='60' r='5.5' fill='currentColor'></circle>
+          <circle cx='202' cy='15' r='5.5' fill='currentColor'></circle>
+          <circle cx='405' cy='12' r='5.5' fill='currentColor'></circle>
+          <circle cx='598' cy='52' r='5.5' fill='currentColor'></circle>
+          <text x='22' y='28' class='route-label route-city' text-anchor='start'
+            >JAKARTA</text
+          >
+          <text
+            x='202'
+            y='44'
+            class='route-label route-city'
+            text-anchor='middle'>KUALA LUMPUR</text
+          >
+          <text
+            x='405'
+            y='41'
+            class='route-label route-city'
+            text-anchor='middle'>SINGAPORE</text
+          >
+          <text x='598' y='30' class='route-label route-city' text-anchor='end'
+            >BRUNEI</text
+          >
         </svg>
 
         <!-- stats -->
-        <div class="hero-stats">
-          <div class="stat"><span class="num">3</span><span class="lab">Markets serving now</span></div>
-          <div class="stat"><span class="num">6</span><span class="lab">Product categories</span></div>
-          <div class="stat"><span class="num">7</span><span class="lab">Sales channels</span></div>
-          <div class="stat"><span class="num">ID&rarr;SEA</span><span class="lab">Fulfillment lane</span></div>
+        <div class='hero-stats'>
+          <div class='stat'>
+            <span class='num'>3</span><span class='lab'
+              >Markets serving now</span>
+          </div>
+          <div class='stat'>
+            <span class='num'>6</span><span class='lab'
+              >Product categories</span>
+          </div>
+          <div class='stat'>
+            <span class='num'>7</span><span class='lab'>Sales channels</span>
+          </div>
+          <div class='stat'>
+            <span class='num'>ID&rarr;SEA</span><span class='lab'
+              >Fulfillment lane</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="wrap">
-        <div class="cols-2">
-          <div class="section-head" style="margin-bottom:0">
-            <span class="eyebrow">About us</span>
+    <section class='section' id='about'>
+      <div class='wrap'>
+        <div class='cols-2'>
+          <div class='section-head' style='margin-bottom:0'>
+            <span class='eyebrow'>About us</span>
             <h2>We specialize in cross-border online sales</h2>
           </div>
           <div>
-            <p class="lead-p body-p">
-              We market products directly to consumers in Malaysia and Singapore using
-              Facebook Ads, WhatsApp sales, marketplace channels, and other digital platforms.
+            <p class='lead-p body-p'>
+              We market products directly to consumers in Malaysia and Singapore
+              using Facebook Ads, WhatsApp sales, marketplace channels, and
+              other digital platforms.
             </p>
-            <p class="body-p muted">
-              To support our growth, we continuously build partnerships with reliable
-              fulfillment and warehousing providers across Southeast Asia &mdash; making it
-              simple for Indonesian sellers to reach international customers.
+            <p class='body-p muted'>
+              To support our growth, we continuously build partnerships with
+              reliable fulfillment and warehousing providers across Southeast
+              Asia &mdash; making it simple for Indonesian sellers to reach
+              international customers.
             </p>
           </div>
         </div>
 
-        <div class="feature-row">
-          <div class="feature">
-            <span class="fnum">01</span>
+        <div class='feature-row'>
+          <div class='feature'>
+            <span class='fnum'>01</span>
             <h3>Direct-to-consumer reach</h3>
-            <p>We acquire and serve customers ourselves &mdash; not through a reseller chain &mdash; so products move fast.</p>
+            <p>
+              We acquire and serve customers ourselves &mdash; not through a
+              reseller chain &mdash; so products move fast.
+            </p>
           </div>
-          <div class="feature">
-            <span class="fnum">02</span>
+          <div class='feature'>
+            <span class='fnum'>02</span>
             <h3>Digital-first marketing</h3>
-            <p>Paid social, WhatsApp, and marketplaces drive demand across each destination market.</p>
+            <p>
+              Paid social, WhatsApp, and marketplaces drive demand across each
+              destination market.
+            </p>
           </div>
-          <div class="feature">
-            <span class="fnum">03</span>
+          <div class='feature'>
+            <span class='fnum'>03</span>
             <h3>Reliable fulfillment</h3>
-            <p>A scalable cross-border network handles warehousing, shipping, and local delivery.</p>
+            <p>
+              A scalable cross-border network handles warehousing, shipping, and
+              local delivery.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- MARKETS -->
-    <section class="section dark" id="markets">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow on-dark">Markets we serve</span>
+    <section class='section dark' id='markets'>
+      <div class='wrap'>
+        <div class='section-head'>
+          <span class='eyebrow on-dark'>Markets we serve</span>
           <h2>Destinations &amp; status</h2>
         </div>
-        <div class="board" role="table" aria-label="Destination markets and status">
-          <div class="board-row board-head" role="row">
-            <span role="columnheader">Code</span>
-            <span role="columnheader">Destination</span>
-            <span role="columnheader">Status</span>
+        <div
+          class='board'
+          role='table'
+          aria-label='Destination markets and status'
+        >
+          <div class='board-row board-head' role='row'>
+            <span role='columnheader'>Code</span>
+            <span role='columnheader'>Destination</span>
+            <span role='columnheader'>Status</span>
           </div>
-          {markets.map((m) => (
-            <div class="board-row" role="row">
-              <span class="board-code" role="cell">{m.code}</span>
-              <span class="board-name" role="cell">
-                <span class="board-flag" aria-hidden="true">{m.flag}</span>
-                {m.name}
-              </span>
-              <span class={`board-status ${m.status}`} role="cell">
-                {m.status === 'active' ? 'Serving now' : 'Planned'}
-              </span>
-            </div>
-          ))}
+          {
+            markets.map((m) => (
+              <div class='board-row' role='row'>
+                <span class='board-code' role='cell'>
+                  {m.code}
+                </span>
+                <span class='board-name' role='cell'>
+                  <span class='board-flag' aria-hidden='true'>
+                    {m.flag}
+                  </span>
+                  {m.name}
+                </span>
+                <span class={`board-status ${m.status}`} role='cell'>
+                  {m.status === 'active' ? 'Serving now' : 'Planned'}
+                </span>
+              </div>
+            ))
+          }
         </div>
       </div>
     </section>
 
     <!-- PRODUCTS -->
-    <section class="section" id="products">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Product categories</span>
+    <section class='section' id='products'>
+      <div class='wrap'>
+        <div class='section-head'>
+          <span class='eyebrow'>Product categories</span>
           <h2>What we sell</h2>
         </div>
-        <div class="cat-grid">
-          {categories.map((c) => (
-            <div class="cat">
-              <span class="cat-code">{c.code}</span>
-              <div class="cat-name">{c.name}</div>
-              <div class="cat-note">{c.note}</div>
-            </div>
-          ))}
+        <div class='cat-grid'>
+          {
+            categories.map((c) => (
+              <div class='cat'>
+                <span class='cat-code'>{c.code}</span>
+                <div class='cat-name'>{c.name}</div>
+                <div class='cat-note'>{c.note}</div>
+              </div>
+            ))
+          }
         </div>
-        <p class="footnote">Product categories may vary based on market demand and seasonal trends.</p>
+        <p class='footnote'>
+          Product categories may vary based on market demand and seasonal
+          trends.
+        </p>
       </div>
     </section>
 
     <!-- OPERATE / CHANNELS -->
-    <section class="section paper-2" id="operate">
-      <div class="wrap">
-        <div class="cols-2">
-          <div class="section-head" style="margin-bottom:0">
-            <span class="eyebrow">Business model</span>
+    <section class='section paper-2' id='operate'>
+      <div class='wrap'>
+        <div class='cols-2'>
+          <div class='section-head' style='margin-bottom:0'>
+            <span class='eyebrow'>Business model</span>
             <h2>How we work</h2>
-            <p class="body-p muted" style="margin-top:1.2rem; max-width:34ch">
-              A direct-to-consumer engine, wired to local payment and delivery in every market.
+            <p class='body-p muted' style='margin-top:1.2rem; max-width:34ch'>
+              A direct-to-consumer engine, wired to local payment and delivery
+              in every market.
             </p>
           </div>
-          <ul class="chan-list">
-            {channels.map((c, i) => (
-              <li class="chan">
-                <span class="chan-i">{String(i + 1).padStart(2, '0')}</span>
-                <span class="chan-name">{c}</span>
-              </li>
-            ))}
+          <ul class='chan-list'>
+            {
+              channels.map((c, i) => (
+                <li class='chan'>
+                  <span class='chan-i'>{String(i + 1).padStart(2, '0')}</span>
+                  <span class='chan-name'>{c}</span>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="section dark" id="sellers">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow on-dark">From the sellers we carry</span>
+    <section class='section dark' id='sellers'>
+      <div class='wrap'>
+        <div class='section-head'>
+          <span class='eyebrow on-dark'>From the sellers we carry</span>
           <h2>Trusted by Indonesian brands</h2>
         </div>
-        <div class="quote-grid">
-          {testimonials.map((t) => (
-            <figure class="quote">
-              <div class="mark" aria-hidden="true">&ldquo;</div>
-              <p>{t.quote}</p>
-              <footer>
-                <span class="who">{t.who}</span>
-                <span class="role">{t.role}</span>
-              </footer>
-            </figure>
-          ))}
+        <div class='quote-grid'>
+          {
+            testimonials.map((t) => (
+              <figure class='quote'>
+                <div class='mark' aria-hidden='true'>
+                  &ldquo;
+                </div>
+                <p>{t.quote}</p>
+                <footer>
+                  <span class='who'>{t.who}</span>
+                  <span class='role'>{t.role}</span>
+                </footer>
+              </figure>
+            ))
+          }
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section" id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Frequently asked</span>
+    <section class='section' id='faq'>
+      <div class='wrap'>
+        <div class='section-head'>
+          <span class='eyebrow'>Frequently asked</span>
           <h2>Questions, answered</h2>
         </div>
-        <div class="faq">
-          {faqs.map((f, i) => (
-            <details open={i === 0}>
-              <summary>
-                <span class="q">{f.q}</span>
-                <span class="tog" aria-hidden="true"></span>
-              </summary>
-              <div class="answer"><p>{f.a}</p></div>
-            </details>
-          ))}
+        <div class='faq'>
+          {
+            faqs.map((f, i) => (
+              <details open={i === 0}>
+                <summary>
+                  <span class='q'>{f.q}</span>
+                  <span class='tog' aria-hidden='true' />
+                </summary>
+                <div class='answer'>
+                  <p>{f.a}</p>
+                </div>
+              </details>
+            ))
+          }
         </div>
       </div>
     </section>
 
     <!-- CONTACT + FORM -->
-    <section class="section paper-2" id="contact">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">Partnership inquiry</span>
+    <section class='section paper-2' id='contact'>
+      <div class='wrap'>
+        <div class='section-head'>
+          <span class='eyebrow'>Partnership inquiry</span>
           <h2>Build the network with us</h2>
         </div>
-        <div class="contact-grid">
+        <div class='contact-grid'>
           <div>
-            <p class="contact-copy">
-              We welcome discussions with warehouse, fulfillment, logistics, last-mile, and
-              payment providers interested in supporting our expansion across Southeast Asia.
-              Tell us about your service and we'll be in touch.
+            <p class='contact-copy'>
+              We welcome discussions with warehouse, fulfillment, logistics,
+              last-mile, and payment providers interested in supporting our
+              expansion across Southeast Asia. Tell us about your service and
+              we'll be in touch.
             </p>
           </div>
 
-          <address class="label-card">
-            <div class="label-route" aria-hidden="true">
+          <address class='label-card'>
+            <div class='label-route' aria-hidden='true'>
               <span>From &middot; Indonesia</span>
-              <span class="label-arrow">&rarr;</span>
+              <span class='label-arrow'>&rarr;</span>
               <span>To &middot; Southeast Asia</span>
             </div>
             <dl>
-              <div class="label-row"><dt>Email</dt><dd><a href="mailto:hello@sahabatexport.com">hello@sahabatexport.com</a></dd></div>
-              <div class="label-row"><dt>WhatsApp</dt><dd><a href="https://wa.me/601129373730">+60 11-2937-3730</a></dd></div>
-              <div class="label-row"><dt>Website</dt><dd><a href="https://www.sahabatexport.com">www.sahabatexport.com</a></dd></div>
+              <div class='label-row'>
+                <dt>Email</dt><dd>
+                  <a href='mailto:cs@sahabatexport.com'>cs@sahabatexport.com</a>
+                </dd>
+              </div>
+              <div class='label-row'>
+                <dt>WhatsApp</dt><dd>
+                  <a href='https://wa.me/601129373730'>+60 11-2937-3730</a>
+                </dd>
+              </div>
+              <div class='label-row'>
+                <dt>Website</dt><dd>
+                  <a href='https://www.sahabatexport.com'
+                    >www.sahabatexport.com</a>
+                </dd>
+              </div>
             </dl>
           </address>
         </div>
@@ -366,13 +606,18 @@ const faqs = [
     </section>
 
     <!-- CTA BAND -->
-    <section class="cta-band">
-      <div class="cta-band-inner">
+    <section class='cta-band'>
+      <div class='cta-band-inner'>
         <div>
           <h2>Bersama menuju pasar dunia</h2>
-          <p>Together toward the world's markets. Let's grow the cross-border lane for Indonesian products.</p>
+          <p>
+            Together toward the world's markets. Let's grow the cross-border
+            lane for Indonesian products.
+          </p>
         </div>
-        <a href="#contact" class="btn btn-gold">Start a conversation <span class="arrow">&rarr;</span></a>
+        <a href='#contact' class='btn btn-gold'
+          >Start a conversation <span class='arrow'>&rarr;</span></a
+        >
       </div>
     </section>
   </main>
@@ -382,29 +627,36 @@ const faqs = [
     (function headerScroll() {
       const bar = document.getElementById('topbar');
       if (!bar) return;
-      const onScroll = () => bar.classList.toggle('scrolled', window.scrollY > 8);
+      const onScroll = () =>
+        bar.classList.toggle('scrolled', window.scrollY > 8);
       onScroll();
       window.addEventListener('scroll', onScroll, { passive: true });
     })();
 
     // Reveal on scroll
     (function reveal() {
-      const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)')
+        .matches;
       if (!motionOk || !('IntersectionObserver' in window)) return;
-      const targets = document.querySelectorAll('.section-head, .feature, .cat, .quote, .board, .chan-list, .label-card, .form, .cta-band-inner');
+      const targets = document.querySelectorAll(
+        '.section-head, .feature, .cat, .quote, .board, .chan-list, .label-card, .form, .cta-band-inner',
+      );
       targets.forEach((t) => t.classList.add('reveal'));
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((e, idx) => {
-          if (e.isIntersecting) {
-            (e.target as HTMLElement).style.transitionDelay = Math.min(idx * 40, 160) + 'ms';
-            e.target.classList.add('in');
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, idx) => {
+            if (e.isIntersecting) {
+              (e.target as HTMLElement).style.transitionDelay =
+                Math.min(idx * 40, 160) + 'ms';
+              e.target.classList.add('in');
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -8% 0px' },
+      );
       targets.forEach((t) => io.observe(t));
     })();
-
   </script>
 </Layout>
 
@@ -416,47 +668,71 @@ const faqs = [
   ================================================================== */
   :root {
     /* navy family */
-    --navy:       #0b2d52;
-    --navy-2:     #0a2647;
-    --navy-deep:  #061d39;
-    --navy-ink:   #04101f;
+    --navy: #0b2d52;
+    --navy-2: #0a2647;
+    --navy-deep: #061d39;
+    --navy-ink: #04101f;
     /* paper family */
-    --paper:      #f4f2ea;
-    --paper-2:    #faf8f1;
+    --paper: #f4f2ea;
+    --paper-2: #faf8f1;
     --paper-card: #fffdf6;
     /* ink + grey */
-    --ink:        #16212c;
-    --grey:       #5d6b73;
+    --ink: #16212c;
+    --grey: #5d6b73;
     --grey-light: #8aa0ae;
     /* gold family (metallic) */
-    --gold:       #d9a531;
-    --gold-hi:    #f1cb63;
-    --gold-deep:  #a9761a;
-    --gold-text:  #9c660f;
+    --gold: #d9a531;
+    --gold-hi: #f1cb63;
+    --gold-deep: #a9761a;
+    --gold-text: #9c660f;
     /* lines */
-    --line:       #ddd9cd;
-    --line-soft:  #e7e3d8;
-    --line-dark:  rgba(244, 242, 234, 0.16);
+    --line: #ddd9cd;
+    --line-soft: #e7e3d8;
+    --line-dark: rgba(244, 242, 234, 0.16);
     /* status */
-    --green:      #2f8a5b;
-    --amber:      #b07c1f;
+    --green: #2f8a5b;
+    --amber: #b07c1f;
     /* gradients */
-    --grad-gold:  linear-gradient(98deg, var(--gold-deep) 0%, var(--gold) 42%, var(--gold-hi) 100%);
-    --grad-navy:  linear-gradient(165deg, var(--navy) 0%, var(--navy-deep) 62%, var(--navy-ink) 100%);
+    --grad-gold: linear-gradient(
+      98deg,
+      var(--gold-deep) 0%,
+      var(--gold) 42%,
+      var(--gold-hi) 100%
+    );
+    --grad-navy: linear-gradient(
+      165deg,
+      var(--navy) 0%,
+      var(--navy-deep) 62%,
+      var(--navy-ink) 100%
+    );
 
     --display: 'Archivo', system-ui, sans-serif;
-    --body:    'Source Sans 3', system-ui, sans-serif;
-    --mono:    'IBM Plex Mono', ui-monospace, monospace;
+    --body: 'Source Sans 3', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
 
     --max: 1140px;
     --pad: clamp(1.25rem, 4vw, 2.5rem);
   }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
   @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
   }
 
   body {
@@ -469,17 +745,32 @@ const faqs = [
     text-rendering: optimizeLegibility;
   }
 
-  img { max-width: 100%; display: block; }
-  ::selection { background: var(--gold); color: var(--navy-ink); }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  ::selection {
+    background: var(--gold);
+    color: var(--navy-ink);
+  }
 
-  a { color: var(--gold-text); text-underline-offset: 3px; }
-  a:focus-visible, button:focus-visible, summary:focus-visible,
-  input:focus-visible, select:focus-visible, textarea:focus-visible {
+  a {
+    color: var(--gold-text);
+    text-underline-offset: 3px;
+  }
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
     outline: 2px solid var(--gold);
     outline-offset: 3px;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-family: var(--display);
     font-weight: 800;
     line-height: 1.02;
@@ -497,7 +788,11 @@ const faqs = [
     color: var(--gold);
   }
 
-  .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--pad); }
+  .wrap {
+    max-width: var(--max);
+    margin-inline: auto;
+    padding-inline: var(--pad);
+  }
 
   /* mono eyebrow with leading rule */
   .eyebrow {
@@ -517,7 +812,9 @@ const faqs = [
     background: currentColor;
     opacity: 0.6;
   }
-  .eyebrow.on-dark { color: var(--gold-hi); }
+  .eyebrow.on-dark {
+    color: var(--gold-hi);
+  }
 
   /* ============================ HEADER ============================ */
   .topbar {
@@ -527,7 +824,10 @@ const faqs = [
     background: color-mix(in srgb, var(--paper) 86%, transparent);
     backdrop-filter: saturate(150%) blur(10px);
     border-bottom: 1px solid transparent;
-    transition: border-color .3s ease, box-shadow .3s ease, background .3s ease;
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.3s ease,
+      background 0.3s ease;
   }
   .topbar.scrolled {
     border-bottom-color: var(--line);
@@ -542,11 +842,25 @@ const faqs = [
     justify-content: space-between;
     gap: 1rem;
   }
-  .brand { display: inline-flex; align-items: center; }
-  .brand-logo { height: 46px; width: auto; }
-  @media (max-width: 760px) { .brand-logo { height: 36px; } }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+  }
+  .brand-logo {
+    height: 46px;
+    width: auto;
+  }
+  @media (max-width: 760px) {
+    .brand-logo {
+      height: 36px;
+    }
+  }
 
-  .nav { display: flex; gap: 1.6rem; align-items: center; }
+  .nav {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
   .nav a {
     font-family: var(--mono);
     font-size: 0.8rem;
@@ -560,16 +874,31 @@ const faqs = [
   .nav a:not(.btn)::after {
     content: '';
     position: absolute;
-    left: 0; bottom: -2px;
-    width: 0; height: 1.5px;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
     background: var(--grad-gold);
-    transition: width .25s ease;
+    transition: width 0.25s ease;
   }
-  .nav a:not(.btn):hover::after { width: 100%; }
-  .nav-links { display: flex; gap: 1.6rem; align-items: center; }
-  @media (max-width: 860px) { .nav-links { display: none; } }
+  .nav a:not(.btn):hover::after {
+    width: 100%;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+  @media (max-width: 860px) {
+    .nav-links {
+      display: none;
+    }
+  }
 
-  .topbar .nav .btn { padding: 0.7rem 1.7rem; flex-shrink: 0; }
+  .topbar .nav .btn {
+    padding: 0.7rem 1.7rem;
+    flex-shrink: 0;
+  }
 
   /* buttons */
   .btn {
@@ -585,7 +914,11 @@ const faqs = [
     gap: 0.55rem;
     cursor: pointer;
     border: 1.5px solid transparent;
-    transition: transform .18s ease, box-shadow .25s ease, background .25s ease, color .2s ease;
+    transition:
+      transform 0.18s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease,
+      color 0.2s ease;
     white-space: nowrap;
   }
   .btn-gold {
@@ -594,13 +927,36 @@ const faqs = [
     font-weight: 600;
     box-shadow: 0 8px 22px -12px rgba(169, 118, 26, 0.9);
   }
-  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -12px rgba(169, 118, 26, 0.95); color: var(--navy-ink) !important; }
-  .btn-outline { border-color: var(--ink); color: var(--ink); background: transparent; }
-  .btn-outline:hover { background: var(--ink); color: var(--paper) !important; }
-  .btn-ghost-light { border-color: rgba(244,242,234,0.5); color: var(--paper); background: transparent; }
-  .btn-ghost-light:hover { background: rgba(244,242,234,0.1); color: var(--paper) !important; transform: translateY(-2px); }
-  .btn .arrow { transition: transform .2s ease; }
-  .btn:hover .arrow { transform: translateX(3px); }
+  .btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px -12px rgba(169, 118, 26, 0.95);
+    color: var(--navy-ink) !important;
+  }
+  .btn-outline {
+    border-color: var(--ink);
+    color: var(--ink);
+    background: transparent;
+  }
+  .btn-outline:hover {
+    background: var(--ink);
+    color: var(--paper) !important;
+  }
+  .btn-ghost-light {
+    border-color: rgba(244, 242, 234, 0.5);
+    color: var(--paper);
+    background: transparent;
+  }
+  .btn-ghost-light:hover {
+    background: rgba(244, 242, 234, 0.1);
+    color: var(--paper) !important;
+    transform: translateY(-2px);
+  }
+  .btn .arrow {
+    transition: transform 0.2s ease;
+  }
+  .btn:hover .arrow {
+    transform: translateX(3px);
+  }
 
   /* ============================ HERO ============================ */
   .hero {
@@ -612,20 +968,36 @@ const faqs = [
   }
   .hero::before {
     content: '';
-    position: absolute; inset: 0;
-    background-image: radial-gradient(rgba(241, 203, 99, 0.16) 1px, transparent 1.6px);
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      rgba(241, 203, 99, 0.16) 1px,
+      transparent 1.6px
+    );
     background-size: 24px 24px;
-    -webkit-mask-image: radial-gradient(120% 90% at 78% 18%, #000 0%, transparent 62%);
-            mask-image: radial-gradient(120% 90% at 78% 18%, #000 0%, transparent 62%);
+    -webkit-mask-image: radial-gradient(
+      120% 90% at 78% 18%,
+      #000 0%,
+      transparent 62%
+    );
+    mask-image: radial-gradient(120% 90% at 78% 18%, #000 0%, transparent 62%);
     z-index: -1;
     opacity: 0.9;
   }
   .hero::after {
     content: '';
     position: absolute;
-    top: -28%; right: -10%;
-    width: 60vw; height: 60vw; max-width: 720px; max-height: 720px;
-    background: radial-gradient(circle, rgba(217, 165, 49, 0.16) 0%, transparent 60%);
+    top: -28%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    max-width: 720px;
+    max-height: 720px;
+    background: radial-gradient(
+      circle,
+      rgba(217, 165, 49, 0.16) 0%,
+      transparent 60%
+    );
     z-index: -1;
   }
   .hero-inner {
@@ -644,7 +1016,12 @@ const faqs = [
     max-width: 54ch;
     color: #cdd9e2;
   }
-  .hero-cta { display: flex; gap: 0.9rem; flex-wrap: wrap; margin-top: 2rem; }
+  .hero-cta {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
 
   .hero-grid {
     display: grid;
@@ -652,10 +1029,27 @@ const faqs = [
     gap: clamp(1.5rem, 4vw, 3.5rem);
     align-items: center;
   }
-  .hero-art { display: flex; justify-content: center; align-items: center; }
-  .globe-wrap { position: relative; width: min(440px, 100%); aspect-ratio: 1 / 1; }
-  .globe-layer { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; display: block; }
-  .globe-map { object-fit: contain; }
+  .hero-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .globe-wrap {
+    position: relative;
+    width: min(440px, 100%);
+    aspect-ratio: 1 / 1;
+  }
+  .globe-layer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    display: block;
+  }
+  .globe-map {
+    object-fit: contain;
+  }
   .globe-label text {
     font-family: var(--mono);
     font-size: 11px;
@@ -664,29 +1058,71 @@ const faqs = [
     opacity: 0.92;
   }
   @media (prefers-reduced-motion: no-preference) {
-    .orbit-spin { transform-origin: 230px 230px; animation: spin 44s linear infinite; }
-    .trade-arc { animation: dash 2.4s linear infinite; }
-    .node-pulse { transform-origin: 230px 230px; animation: nodePulse 2.6s ease-out infinite; }
-    .se-halo { transform-origin: 230px 188px; animation: haloPulse 4.5s ease-in-out infinite; }
+    .orbit-spin {
+      transform-origin: 230px 230px;
+      animation: spin 44s linear infinite;
+    }
+    .trade-arc {
+      animation: dash 2.4s linear infinite;
+    }
+    .node-pulse {
+      transform-origin: 230px 230px;
+      animation: nodePulse 2.6s ease-out infinite;
+    }
+    .se-halo {
+      transform-origin: 230px 188px;
+      animation: haloPulse 4.5s ease-in-out infinite;
+    }
   }
   @keyframes haloPulse {
-    0%, 100% { opacity: 0.55; transform: scale(1); }
-    50%      { opacity: 0.25; transform: scale(1.08); }
+    0%,
+    100% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.25;
+      transform: scale(1.08);
+    }
   }
-  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
   @keyframes nodePulse {
-    0%   { transform: scale(1);   opacity: 0.9; }
-    70%  { transform: scale(2.6); opacity: 0; }
-    100% { transform: scale(2.6); opacity: 0; }
+    0% {
+      transform: scale(1);
+      opacity: 0.9;
+    }
+    70% {
+      transform: scale(2.6);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(2.6);
+      opacity: 0;
+    }
   }
   @media (max-width: 900px) {
-    .hero-grid { grid-template-columns: 1fr; gap: 0; }
-    .hero-art { margin-top: 2.5rem; }
-    .globe { width: min(360px, 78%); }
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .hero-art {
+      margin-top: 2.5rem;
+    }
+    .globe {
+      width: min(360px, 78%);
+    }
   }
   @media (max-width: 520px) {
-    .hero-art { display: none; }
-    .hero h1 { max-width: none; }
+    .hero-art {
+      display: none;
+    }
+    .hero h1 {
+      max-width: none;
+    }
   }
 
   /* route motif */
@@ -701,16 +1137,25 @@ const faqs = [
     stroke-dasharray: 3 9;
   }
   @media (prefers-reduced-motion: no-preference) {
-    .route-flow { stroke-dasharray: 4 10; animation: dash 2.6s linear infinite; }
+    .route-flow {
+      stroke-dasharray: 4 10;
+      animation: dash 2.6s linear infinite;
+    }
   }
-  @keyframes dash { to { stroke-dashoffset: -28; } }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -28;
+    }
+  }
   .route-label {
     font-family: var(--mono);
     font-size: 13px;
     fill: var(--grey-light);
     letter-spacing: 0.12em;
   }
-  .route-city { fill: var(--gold-hi); }
+  .route-city {
+    fill: var(--gold-hi);
+  }
 
   /* hero stats strip */
   .hero-stats {
@@ -728,7 +1173,9 @@ const faqs = [
     font-size: clamp(2rem, 4vw, 3rem);
     line-height: 1;
     background: var(--grad-gold);
-    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .stat .lab {
     font-family: var(--mono);
@@ -740,12 +1187,19 @@ const faqs = [
     display: block;
   }
   @media (max-width: 620px) {
-    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1.4rem 1rem; }
+    .hero-stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.4rem 1rem;
+    }
   }
 
   /* ============================ SECTIONS ============================ */
-  .section { padding: clamp(3.5rem, 8vw, 6rem) 0; }
-  .section.paper-2 { background: var(--paper-2); }
+  .section {
+    padding: clamp(3.5rem, 8vw, 6rem) 0;
+  }
+  .section.paper-2 {
+    background: var(--paper-2);
+  }
   .section.dark {
     background: var(--navy-deep);
     color: var(--paper);
@@ -755,21 +1209,33 @@ const faqs = [
   }
   .section.dark::before {
     content: '';
-    position: absolute; inset: 0;
-    background-image: radial-gradient(rgba(241, 203, 99, 0.12) 1px, transparent 1.6px);
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      rgba(241, 203, 99, 0.12) 1px,
+      transparent 1.6px
+    );
     background-size: 26px 26px;
-    -webkit-mask-image: radial-gradient(110% 80% at 88% 0%, #000, transparent 60%);
-            mask-image: radial-gradient(110% 80% at 88% 0%, #000, transparent 60%);
+    -webkit-mask-image: radial-gradient(
+      110% 80% at 88% 0%,
+      #000,
+      transparent 60%
+    );
+    mask-image: radial-gradient(110% 80% at 88% 0%, #000, transparent 60%);
     z-index: -1;
   }
-  .section-head { margin-bottom: clamp(1.8rem, 4vw, 2.8rem); }
+  .section-head {
+    margin-bottom: clamp(1.8rem, 4vw, 2.8rem);
+  }
   .section-head h2 {
     font-size: clamp(1.9rem, 4.2vw, 3rem);
     font-variation-settings: 'wdth' 80;
     max-width: 20ch;
     margin-top: 1rem;
   }
-  .section.dark .section-head h2 { color: var(--paper); }
+  .section.dark .section-head h2 {
+    color: var(--paper);
+  }
 
   /* generic two-column */
   .cols-2 {
@@ -778,10 +1244,18 @@ const faqs = [
     gap: clamp(2rem, 5vw, 3.5rem);
     align-items: start;
   }
-  .lead-p { font-size: 1.12rem; }
-  .body-p + .body-p { margin-top: 1rem; }
-  .body-p { color: var(--ink); }
-  .muted { color: var(--grey); }
+  .lead-p {
+    font-size: 1.12rem;
+  }
+  .body-p + .body-p {
+    margin-top: 1rem;
+  }
+  .body-p {
+    color: var(--ink);
+  }
+  .muted {
+    color: var(--grey);
+  }
 
   /* feature trio under about */
   .feature-row {
@@ -806,11 +1280,25 @@ const faqs = [
     margin: 0.5rem 0 0.4rem;
     letter-spacing: 0;
   }
-  .feature p { font-size: 0.96rem; color: var(--grey); }
-  @media (max-width: 760px) { .feature-row { grid-template-columns: 1fr; gap: 0.4rem; } .feature { padding-block: 1rem; } }
+  .feature p {
+    font-size: 0.96rem;
+    color: var(--grey);
+  }
+  @media (max-width: 760px) {
+    .feature-row {
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+    }
+    .feature {
+      padding-block: 1rem;
+    }
+  }
 
   /* ============================ MARKETS BOARD ============================ */
-  .board { font-family: var(--mono); border-top: 1px solid var(--line-dark); }
+  .board {
+    font-family: var(--mono);
+    border-top: 1px solid var(--line-dark);
+  }
   .board-row {
     display: grid;
     grid-template-columns: 4.5rem 1fr auto;
@@ -818,19 +1306,53 @@ const faqs = [
     align-items: center;
     padding: 1.05rem 0.4rem;
     border-bottom: 1px solid var(--line-dark);
-    transition: background .2s ease, padding-left .2s ease;
+    transition:
+      background 0.2s ease,
+      padding-left 0.2s ease;
   }
-  .board-row:not(.board-head):hover { background: rgba(244,242,234,0.04); padding-left: 0.9rem; }
-  .board-head { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--grey-light); }
-  .board-code { color: var(--gold-hi); font-weight: 500; letter-spacing: 0.05em; }
-  .board-name { font-size: 1.02rem; display: flex; gap: 0.7rem; align-items: center; color: var(--paper); }
-  .board-flag { font-size: 1.25rem; line-height: 1; }
+  .board-row:not(.board-head):hover {
+    background: rgba(244, 242, 234, 0.04);
+    padding-left: 0.9rem;
+  }
+  .board-head {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--grey-light);
+  }
+  .board-code {
+    color: var(--gold-hi);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .board-name {
+    font-size: 1.02rem;
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    color: var(--paper);
+  }
+  .board-flag {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
   .board-status {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
-    padding: 0.32rem 0.7rem; border-radius: 2px; justify-self: end; white-space: nowrap;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.32rem 0.7rem;
+    border-radius: 2px;
+    justify-self: end;
+    white-space: nowrap;
   }
-  .board-status.active { background: var(--green); color: #eafff3; }
-  .board-status.planned { border: 1px solid var(--amber); color: #e7c473; }
+  .board-status.active {
+    background: var(--green);
+    color: #eafff3;
+  }
+  .board-status.planned {
+    border: 1px solid var(--amber);
+    color: #e7c473;
+  }
 
   /* ============================ PRODUCTS ============================ */
   .cat-grid {
@@ -845,10 +1367,14 @@ const faqs = [
   .cat {
     background: var(--paper-card);
     padding: 1.5rem 1.4rem 1.6rem;
-    transition: background .2s ease, transform .2s ease;
+    transition:
+      background 0.2s ease,
+      transform 0.2s ease;
     position: relative;
   }
-  .cat:hover { background: #fff; }
+  .cat:hover {
+    background: #fff;
+  }
   .cat-code {
     font-family: var(--mono);
     font-size: 0.74rem;
@@ -858,14 +1384,43 @@ const faqs = [
     padding: 0.18rem 0.5rem;
     border-radius: 3px;
   }
-  .cat-name { font-weight: 700; font-size: 1.16rem; margin: 0.9rem 0 0.25rem; font-family: var(--display); font-variation-settings: 'wdth' 92; letter-spacing: 0; text-transform: none; line-height: 1.1; }
-  .cat-note { color: var(--grey); font-size: 0.95rem; }
-  @media (max-width: 860px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 520px) { .cat-grid { grid-template-columns: 1fr; } }
-  .footnote { margin-top: 1.3rem; font-size: 0.9rem; color: var(--grey); font-style: italic; }
+  .cat-name {
+    font-weight: 700;
+    font-size: 1.16rem;
+    margin: 0.9rem 0 0.25rem;
+    font-family: var(--display);
+    font-variation-settings: 'wdth' 92;
+    letter-spacing: 0;
+    text-transform: none;
+    line-height: 1.1;
+  }
+  .cat-note {
+    color: var(--grey);
+    font-size: 0.95rem;
+  }
+  @media (max-width: 860px) {
+    .cat-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 520px) {
+    .cat-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .footnote {
+    margin-top: 1.3rem;
+    font-size: 0.9rem;
+    color: var(--grey);
+    font-style: italic;
+  }
 
   /* ============================ OPERATE / CHANNELS ============================ */
-  .chan-list { list-style: none; display: grid; gap: 0; }
+  .chan-list {
+    list-style: none;
+    display: grid;
+    gap: 0;
+  }
   .chan {
     display: grid;
     grid-template-columns: 2.6rem 1fr;
@@ -874,9 +1429,18 @@ const faqs = [
     padding: 0.95rem 0.25rem;
     border-bottom: 1px solid var(--line);
   }
-  .chan:first-child { border-top: 1px solid var(--line); }
-  .chan-i { font-family: var(--mono); font-size: 0.8rem; color: var(--gold-text); }
-  .chan-name { font-size: 1.08rem; font-weight: 600; }
+  .chan:first-child {
+    border-top: 1px solid var(--line);
+  }
+  .chan-i {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--gold-text);
+  }
+  .chan-name {
+    font-size: 1.08rem;
+    font-weight: 600;
+  }
 
   /* ============================ TESTIMONIALS ============================ */
   .quote-grid {
@@ -891,26 +1455,73 @@ const faqs = [
     background: rgba(244, 242, 234, 0.03);
     display: flex;
     flex-direction: column;
-    transition: transform .22s ease, border-color .22s ease, background .22s ease;
+    transition:
+      transform 0.22s ease,
+      border-color 0.22s ease,
+      background 0.22s ease;
   }
-  .quote:hover { transform: translateY(-4px); border-color: rgba(241,203,99,0.4); background: rgba(244, 242, 234, 0.06); }
-  .quote .mark { font-family: var(--display); font-size: 2.8rem; line-height: 0.6; color: var(--gold); height: 1.1rem; }
-  .quote p { color: #dde6ed; font-size: 1.02rem; margin: 0.6rem 0 1.4rem; flex: 1; }
-  .quote footer { display: flex; flex-direction: column; gap: 0.1rem; border-top: 1px solid var(--line-dark); padding-top: 0.9rem; }
-  .quote .who { font-weight: 700; color: var(--paper); font-size: 0.98rem; }
-  .quote .role { font-family: var(--mono); font-size: 0.74rem; color: var(--grey-light); letter-spacing: 0.04em; }
-  @media (max-width: 860px) { .quote-grid { grid-template-columns: 1fr; } }
+  .quote:hover {
+    transform: translateY(-4px);
+    border-color: rgba(241, 203, 99, 0.4);
+    background: rgba(244, 242, 234, 0.06);
+  }
+  .quote .mark {
+    font-family: var(--display);
+    font-size: 2.8rem;
+    line-height: 0.6;
+    color: var(--gold);
+    height: 1.1rem;
+  }
+  .quote p {
+    color: #dde6ed;
+    font-size: 1.02rem;
+    margin: 0.6rem 0 1.4rem;
+    flex: 1;
+  }
+  .quote footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    border-top: 1px solid var(--line-dark);
+    padding-top: 0.9rem;
+  }
+  .quote .who {
+    font-weight: 700;
+    color: var(--paper);
+    font-size: 0.98rem;
+  }
+  .quote .role {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    color: var(--grey-light);
+    letter-spacing: 0.04em;
+  }
+  @media (max-width: 860px) {
+    .quote-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 
   /* ============================ FAQ ============================ */
-  .faq { display: flex; flex-direction: column; gap: 0.85rem; }
+  .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
   .faq details {
     border: 1px solid var(--line);
     border-radius: 14px;
     background: var(--paper-card);
     overflow: hidden;
-    transition: border-color .22s ease, box-shadow .22s ease, background .22s ease;
+    transition:
+      border-color 0.22s ease,
+      box-shadow 0.22s ease,
+      background 0.22s ease;
   }
-  .faq details:hover { border-color: var(--line); box-shadow: 0 10px 26px -22px rgba(6, 29, 57, 0.55); }
+  .faq details:hover {
+    border-color: var(--line);
+    box-shadow: 0 10px 26px -22px rgba(6, 29, 57, 0.55);
+  }
   .faq details[open] {
     border-color: color-mix(in srgb, var(--gold) 55%, var(--line));
     box-shadow: 0 16px 38px -26px rgba(11, 45, 82, 0.6);
@@ -930,37 +1541,84 @@ const faqs = [
     font-size: clamp(1.05rem, 2vw, 1.22rem);
     line-height: 1.2;
     color: var(--ink);
-    transition: color .2s ease;
+    transition: color 0.2s ease;
   }
-  .faq summary::-webkit-details-marker { display: none; }
-  .faq summary .q { flex: 1; }
-  .faq details[open] summary { color: var(--navy); }
+  .faq summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq summary .q {
+    flex: 1;
+  }
+  .faq details[open] summary {
+    color: var(--navy);
+  }
   .faq .tog {
     position: relative;
     flex: 0 0 auto;
-    width: 2.05rem; height: 2.05rem;
+    width: 2.05rem;
+    height: 2.05rem;
     border-radius: 50%;
     border: 1.5px solid var(--line);
-    transition: background .25s ease, border-color .25s ease, transform .25s ease;
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease,
+      transform 0.25s ease;
   }
-  .faq .tog::before, .faq .tog::after {
+  .faq .tog::before,
+  .faq .tog::after {
     content: '';
-    position: absolute; inset: 0; margin: auto;
+    position: absolute;
+    inset: 0;
+    margin: auto;
     background: var(--gold-text);
     border-radius: 2px;
-    transition: transform .28s ease, background .25s ease;
+    transition:
+      transform 0.28s ease,
+      background 0.25s ease;
   }
-  .faq .tog::before { width: 0.85rem; height: 1.8px; }
-  .faq .tog::after  { width: 1.8px; height: 0.85rem; }
-  .faq details[open] .tog { background: var(--grad-gold); border-color: transparent; transform: rotate(180deg); }
-  .faq details[open] .tog::before { background: var(--navy-ink); }
-  .faq details[open] .tog::after  { transform: scaleY(0); background: var(--navy-ink); }
-  .faq .answer { padding: 0 1.35rem 1.35rem; }
-  .faq .answer p { color: var(--grey); max-width: 64ch; margin: 0; }
+  .faq .tog::before {
+    width: 0.85rem;
+    height: 1.8px;
+  }
+  .faq .tog::after {
+    width: 1.8px;
+    height: 0.85rem;
+  }
+  .faq details[open] .tog {
+    background: var(--grad-gold);
+    border-color: transparent;
+    transform: rotate(180deg);
+  }
+  .faq details[open] .tog::before {
+    background: var(--navy-ink);
+  }
+  .faq details[open] .tog::after {
+    transform: scaleY(0);
+    background: var(--navy-ink);
+  }
+  .faq .answer {
+    padding: 0 1.35rem 1.35rem;
+  }
+  .faq .answer p {
+    color: var(--grey);
+    max-width: 64ch;
+    margin: 0;
+  }
   @media (prefers-reduced-motion: no-preference) {
-    .faq details[open] .answer { animation: faqIn .3s ease; }
+    .faq details[open] .answer {
+      animation: faqIn 0.3s ease;
+    }
   }
-  @keyframes faqIn { from { opacity: 0; transform: translateY(-7px); } to { opacity: 1; transform: none; } }
+  @keyframes faqIn {
+    from {
+      opacity: 0;
+      transform: translateY(-7px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
 
   /* ============================ CONTACT / FORM ============================ */
   .contact-grid {
@@ -969,7 +1627,11 @@ const faqs = [
     gap: clamp(2rem, 5vw, 3.5rem);
     align-items: start;
   }
-  .contact-copy { margin-top: 1.1rem; max-width: 44ch; color: var(--grey); }
+  .contact-copy {
+    margin-top: 1.1rem;
+    max-width: 44ch;
+    color: var(--grey);
+  }
 
   .label-card {
     font-style: normal;
@@ -979,63 +1641,182 @@ const faqs = [
     background: var(--paper-card);
   }
   .label-route {
-    font-family: var(--mono); font-size: 0.7rem; text-transform: uppercase;
-    letter-spacing: 0.1em; color: var(--grey);
-    display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;
-    padding-bottom: 0.9rem; margin-bottom: 0.9rem; border-bottom: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--grey);
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 0.9rem;
+    margin-bottom: 0.9rem;
+    border-bottom: 1px solid var(--line);
   }
-  .label-arrow { color: var(--gold-text); }
-  .label-row { display: grid; grid-template-columns: 6rem 1fr; gap: 0.7rem; padding: 0.45rem 0; }
-  .label-row dt { font-family: var(--mono); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--grey); padding-top: 0.15rem; }
-  .label-row dd a { word-break: break-word; }
-
+  .label-arrow {
+    color: var(--gold-text);
+  }
+  .label-row {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 0.7rem;
+    padding: 0.45rem 0;
+  }
+  .label-row dt {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--grey);
+    padding-top: 0.15rem;
+  }
+  .label-row dd a {
+    word-break: break-word;
+  }
 
   /* ============================ CTA BAND ============================ */
-  .cta-band { background: var(--grad-navy); color: var(--paper); position: relative; overflow: hidden; isolation: isolate; }
+  .cta-band {
+    background: var(--grad-navy);
+    color: var(--paper);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
   .cta-band::before {
-    content: ''; position: absolute; inset: 0;
-    background-image: radial-gradient(rgba(241,203,99,0.13) 1px, transparent 1.6px);
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      rgba(241, 203, 99, 0.13) 1px,
+      transparent 1.6px
+    );
     background-size: 24px 24px;
-    -webkit-mask-image: radial-gradient(90% 120% at 12% 50%, #000, transparent 65%);
-            mask-image: radial-gradient(90% 120% at 12% 50%, #000, transparent 65%);
+    -webkit-mask-image: radial-gradient(
+      90% 120% at 12% 50%,
+      #000,
+      transparent 65%
+    );
+    mask-image: radial-gradient(90% 120% at 12% 50%, #000, transparent 65%);
     z-index: -1;
   }
   .cta-band-inner {
-    max-width: var(--max); margin-inline: auto; padding: clamp(2.8rem, 6vw, 4rem) var(--pad);
-    display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+    max-width: var(--max);
+    margin-inline: auto;
+    padding: clamp(2.8rem, 6vw, 4rem) var(--pad);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
   }
-  .cta-band h2 { font-size: clamp(1.7rem, 3.6vw, 2.6rem); font-variation-settings: 'wdth' 82; max-width: 18ch; color: var(--paper); }
-  .cta-band p { color: #cdd9e2; margin-top: 0.7rem; max-width: 42ch; }
+  .cta-band h2 {
+    font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+    font-variation-settings: 'wdth' 82;
+    max-width: 18ch;
+    color: var(--paper);
+  }
+  .cta-band p {
+    color: #cdd9e2;
+    margin-top: 0.7rem;
+    max-width: 42ch;
+  }
 
   /* ============================ FOOTER ============================ */
-  .footer { background: var(--navy-ink); color: var(--grey-light); }
-  .footer-inner {
-    max-width: var(--max); margin-inline: auto; padding: clamp(2.5rem, 5vw, 3.5rem) var(--pad) 2rem;
+  .footer {
+    background: var(--navy-ink);
+    color: var(--grey-light);
   }
-  .footer-top { display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap; padding-bottom: 2rem; border-bottom: 1px solid var(--line-dark); }
-  .footer-logo { height: 42px; width: auto; filter: brightness(1.05); }
-  .footer-tag { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; color: var(--grey-light); margin-top: 0.9rem; max-width: 30ch; }
-  .footer-nav { display: flex; gap: 2.5rem; flex-wrap: wrap; }
-  .footer-col h4 { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold-hi); font-weight: 500; margin-bottom: 0.9rem; }
-  .footer-col a { display: block; color: #b9c6d1; text-decoration: none; font-size: 0.92rem; padding: 0.28rem 0; }
-  .footer-col a:hover { color: var(--gold-hi); }
+  .footer-inner {
+    max-width: var(--max);
+    margin-inline: auto;
+    padding: clamp(2.5rem, 5vw, 3.5rem) var(--pad) 2rem;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--line-dark);
+  }
+  .footer-logo {
+    height: 42px;
+    width: auto;
+    filter: brightness(1.05);
+  }
+  .footer-tag {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    color: var(--grey-light);
+    margin-top: 0.9rem;
+    max-width: 30ch;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .footer-col h4 {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold-hi);
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+  }
+  .footer-col a {
+    display: block;
+    color: #b9c6d1;
+    text-decoration: none;
+    font-size: 0.92rem;
+    padding: 0.28rem 0;
+  }
+  .footer-col a:hover {
+    color: var(--gold-hi);
+  }
   .footer-bottom {
-    display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
-    font-family: var(--mono); font-size: 0.75rem; color: var(--grey); padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--grey);
+    padding-top: 1.5rem;
   }
 
   /* ============================ REVEAL ============================ */
   @media (prefers-reduced-motion: no-preference) {
-    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
-    .reveal.in { opacity: 1; transform: none; }
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+    }
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
   }
 
   /* ============================ RESPONSIVE ============================ */
   @media (max-width: 860px) {
-    .cols-2, .contact-grid { grid-template-columns: 1fr; }
+    .cols-2,
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
   }
   @media (max-width: 620px) {
-    .board-row { grid-template-columns: 3rem 1fr auto; gap: 0.6rem; }
-    .board-name { font-size: 0.94rem; }
+    .board-row {
+      grid-template-columns: 3rem 1fr auto;
+      gap: 0.6rem;
+    }
+    .board-name {
+      font-size: 0.94rem;
+    }
   }
 </style>
