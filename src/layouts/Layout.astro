@@ -1,15 +1,18 @@
 ---
+import '../styles/global.css';
+
 interface Props {
   title: string;
   description: string;
+  lang?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, lang = 'en' } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang={lang}>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -43,17 +46,22 @@ const year = new Date().getFullYear();
           <nav class='footer-nav' aria-label='Footer'>
             <div class='footer-col'>
               <h4>Explore</h4>
-              <a href='#about'>About</a>
-              <a href='#markets'>Markets</a>
-              <a href='#products'>Products</a>
-              <a href='#operate'>How we work</a>
+              <a href='/#about'>About</a>
+              <a href='/#markets'>Markets</a>
+              <a href='/#products'>Products</a>
+              <a href='/#operate'>How we work</a>
             </div>
             <div class='footer-col'>
               <h4>Connect</h4>
-              <a href='#faq'>FAQ</a>
-              <a href='#contact'>Partnership</a>
+              <a href='/#faq'>FAQ</a>
+              <a href='/#contact'>Partnership</a>
               <a href='mailto:cs@sahabatexport.com'>Email</a>
               <a href='https://wa.me/601129373730'>WhatsApp</a>
+            </div>
+            <div class='footer-col'>
+              <h4>Legal</h4>
+              <a href='/privacy-policy'>Privacy Policy</a>
+              <a href='/privacy-policy#data-deletion'>Data Deletion</a>
             </div>
           </nav>
         </div>

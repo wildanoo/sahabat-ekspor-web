@@ -1,0 +1,526 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const updated = '20 November 2026';
+const email = 'cs@sahabatexport.com';
+const whatsapp = { href: 'https://wa.me/601129373730', label: '+60 11-2937-3730' };
+
+const toc = [
+  { id: 'who-we-are', label: 'Who we are' },
+  { id: 'information-we-collect', label: 'Information we collect' },
+  { id: 'how-we-use', label: 'How we use information' },
+  { id: 'meta-platform-data', label: 'Data from Meta platforms' },
+  { id: 'sharing', label: 'How we share information' },
+  { id: 'transfers', label: 'International transfers' },
+  { id: 'retention', label: 'Data retention' },
+  { id: 'security', label: 'Security' },
+  { id: 'your-rights', label: 'Your rights' },
+  { id: 'data-deletion', label: 'Data deletion' },
+  { id: 'children', label: 'Children' },
+  { id: 'changes', label: 'Changes to this policy' },
+  { id: 'contact', label: 'Contact us' },
+];
+---
+
+<Layout
+  title='Privacy Policy — Sahabat Export'
+  description='How Sahabat Export collects, uses, shares, and deletes personal data, including data received through Facebook, Instagram, Messenger, and WhatsApp.'
+>
+  <header class='topbar scrolled' id='topbar'>
+    <div class='topbar-inner'>
+      <a href='/' class='brand' aria-label='Sahabat Export — home'>
+        <img
+          src='/assets/logo.png'
+          alt='Sahabat Export — Bersama Menuju Pasar Dunia'
+          class='brand-logo'
+        />
+      </a>
+      <nav class='nav' aria-label='Site'>
+        <a href='/' class='btn btn-outline'
+          ><span class='arrow'>&larr;</span> Back to home</a
+        >
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class='legal-hero'>
+      <div class='wrap'>
+        <span class='eyebrow on-dark'>Legal</span>
+        <h1>Privacy Policy</h1>
+        <p class='legal-meta'>Last updated: {updated}</p>
+      </div>
+    </section>
+
+    <section class='legal'>
+      <div class='wrap legal-grid'>
+        <nav class='legal-toc' aria-label='On this page'>
+          <span class='toc-title'>On this page</span>
+          <ol>
+            {
+              toc.map((t) => (
+                <li>
+                  <a href={`#${t.id}`}>{t.label}</a>
+                </li>
+              ))
+            }
+          </ol>
+        </nav>
+
+        <article class='legal-body'>
+          <p class='intro'>
+            This Privacy Policy explains how Sahabat Export (&ldquo;Sahabat
+            Export&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) collects, uses,
+            shares, and protects personal data when you visit
+            <a href='https://www.sahabatexport.com'>www.sahabatexport.com</a>,
+            interact with our Facebook Pages, Instagram accounts, Messenger, or
+            WhatsApp, respond to our ads, or buy products from us. It also
+            explains how you can ask us to delete your data.
+          </p>
+
+          <h2 id='who-we-are'>1. Who we are</h2>
+          <p>
+            Sahabat Export is a cross-border e-commerce business that sells
+            Indonesian products to customers in Malaysia, Singapore, and
+            Brunei through digital marketing, messaging, marketplaces, and
+            cross-border fulfillment. We are the party responsible for the
+            personal data described in this policy. You can reach us at
+            <a href={`mailto:${email}`}>{email}</a>.
+          </p>
+
+          <h2 id='information-we-collect'>2. Information we collect</h2>
+          <h3>Information you give us</h3>
+          <ul>
+            <li>
+              <strong>Contact details</strong> &mdash; name, phone number,
+              WhatsApp number, and email address.
+            </li>
+            <li>
+              <strong>Order and delivery details</strong> &mdash; shipping
+              address, products ordered, order notes, and payment or
+              cash-on-delivery status.
+            </li>
+            <li>
+              <strong>Messages</strong> &mdash; the content of messages you
+              send us through Messenger, Instagram Direct, WhatsApp, email, or
+              marketplace chat.
+            </li>
+            <li>
+              <strong>Business inquiries</strong> &mdash; company name, role,
+              and service details if you contact us as a partner.
+            </li>
+          </ul>
+          <h3>Information we receive through Meta platforms</h3>
+          <p>
+            When you interact with us on Facebook, Instagram, Messenger, or
+            WhatsApp, Meta may make the following available to us, depending on
+            your settings and the feature you use:
+          </p>
+          <ul>
+            <li>
+              Your public profile name and profile picture, and a page-scoped
+              or app-scoped user ID.
+            </li>
+            <li>Messages and attachments you send to our Page or account.</li>
+            <li>
+              Answers you submit in a Facebook or Instagram lead form (for
+              example name, phone number, and city).
+            </li>
+            <li>Your WhatsApp phone number and display name.</li>
+            <li>
+              Aggregated, non-identifying ad performance and audience
+              statistics.
+            </li>
+          </ul>
+          <h3>Information collected automatically</h3>
+          <p>
+            Our website and ads may use cookies, pixels, and similar
+            technologies (such as the Meta Pixel) to record pages visited,
+            device and browser type, approximate location, and ad interactions.
+            You can control cookies through your browser settings and manage ad
+            preferences in your Facebook or Instagram settings.
+          </p>
+
+          <h2 id='how-we-use'>3. How we use information</h2>
+          <ul>
+            <li>To answer your questions and reply to your messages.</li>
+            <li>
+              To process, ship, and deliver your orders, collect payment, and
+              handle returns.
+            </li>
+            <li>
+              To send order updates and customer-service messages, including
+              through WhatsApp.
+            </li>
+            <li>
+              To show relevant ads and measure how well our campaigns perform.
+            </li>
+            <li>
+              To prevent fraud, keep our services secure, and meet legal and
+              tax obligations.
+            </li>
+            <li>
+              To send promotional messages, only where you have agreed to
+              receive them. You can opt out at any time by replying
+              &ldquo;STOP&rdquo; or contacting us.
+            </li>
+          </ul>
+
+          <h2 id='meta-platform-data'>4. Data from Meta platforms</h2>
+          <p>
+            Data we receive through Meta&rsquo;s products and APIs (Facebook,
+            Instagram, Messenger, and WhatsApp) is used only for the purposes
+            described in this policy, mainly to communicate with you and
+            fulfil your orders. In particular, we:
+          </p>
+          <ul>
+            <li>do not sell or rent Meta platform data to anyone;</li>
+            <li>
+              do not use it to make decisions about eligibility for credit,
+              housing, employment, or insurance;
+            </li>
+            <li>
+              do not share it with data brokers or use it to build profiles
+              outside our own customer service and sales;
+            </li>
+            <li>
+              delete it when it is no longer needed, or when you or Meta ask us
+              to (see <a href='#data-deletion'>Data deletion</a>).
+            </li>
+          </ul>
+          <p>
+            We handle this data in line with the
+            <a href='https://developers.facebook.com/terms/' rel='noopener'
+              >Meta Platform Terms</a
+            > and Developer Policies.
+          </p>
+
+          <h2 id='sharing'>5. How we share information</h2>
+          <p>
+            We do not sell your personal data. We share it only as needed to run
+            our business:
+          </p>
+          <ul>
+            <li>
+              <strong>Fulfillment and logistics partners</strong> &mdash;
+              warehouses, freight forwarders, and courier or last-mile delivery
+              companies, so they can deliver your order.
+            </li>
+            <li>
+              <strong>Payment and cash-on-delivery partners</strong> &mdash; to
+              collect and confirm payment.
+            </li>
+            <li>
+              <strong>Service providers</strong> &mdash; messaging, hosting,
+              and customer-service tools that process data on our behalf and
+              under our instructions.
+            </li>
+            <li>
+              <strong>Marketplaces</strong> &mdash; when you order through a
+              marketplace, that marketplace&rsquo;s own privacy policy also
+              applies.
+            </li>
+            <li>
+              <strong>Authorities</strong> &mdash; when required by law, or to
+              protect our rights, our customers, or the public.
+            </li>
+          </ul>
+
+          <h2 id='transfers'>6. International transfers</h2>
+          <p>
+            Because we sell across borders, your data may be processed in
+            Indonesia, Malaysia, Singapore, Brunei, and in countries where our
+            service providers (including Meta) operate. When we transfer data,
+            we take reasonable steps to make sure it stays protected to the
+            standard described in this policy.
+          </p>
+
+          <h2 id='retention'>7. Data retention</h2>
+          <p>
+            We keep personal data only as long as needed for the purposes
+            above. Customer and order records are generally kept for up to
+            5&nbsp;years to meet accounting and tax requirements. Chat
+            messages and lead-form data that did not lead to an order are
+            deleted within 12&nbsp;months of our last interaction. Data is
+            deleted sooner if you ask us to and we have no legal reason to keep
+            it.
+          </p>
+
+          <h2 id='security'>8. Security</h2>
+          <p>
+            We use reasonable technical and organisational measures to protect
+            personal data, including access controls, limited staff access, and
+            secure, reputable service providers. No method of transmission or
+            storage is completely secure, but we work to protect your data and
+            will act promptly if a breach occurs.
+          </p>
+
+          <h2 id='your-rights'>9. Your rights</h2>
+          <p>
+            Depending on where you live &mdash; including under Malaysia&rsquo;s
+            Personal Data Protection Act 2010, Singapore&rsquo;s Personal Data
+            Protection Act 2012, and Indonesia&rsquo;s Law No. 27 of 2022 on
+            Personal Data Protection &mdash; you may have the right to:
+          </p>
+          <ul>
+            <li>access the personal data we hold about you;</li>
+            <li>correct data that is inaccurate or incomplete;</li>
+            <li>withdraw consent, including for marketing messages;</li>
+            <li>ask us to delete your personal data;</li>
+            <li>complain to your local data protection authority.</li>
+          </ul>
+          <p>
+            To use any of these rights, contact us using the details in
+            <a href='#contact'>Contact us</a>. We will reply within
+            30&nbsp;days.
+          </p>
+
+          <section
+            class='deletion'
+            id='data-deletion'
+            aria-labelledby='data-deletion-title'
+          >
+            <span class='eyebrow'>User data deletion</span>
+            <h2 id='data-deletion-title'>10. Data deletion</h2>
+            <p>
+              You can ask us to delete all personal data we hold about you,
+              including data received through Facebook, Instagram, Messenger,
+              and WhatsApp, at any time.
+            </p>
+
+            <h3>How to request deletion</h3>
+            <ol class='steps'>
+              <li>
+                Email <a href={`mailto:${email}?subject=Data%20Deletion%20Request`}
+                  >{email}</a
+                > with the subject <strong>&ldquo;Data Deletion Request&rdquo;</strong
+                >, or send the same message to us on WhatsApp at
+                <a href={whatsapp.href}>{whatsapp.label}</a>.
+              </li>
+              <li>
+                Include your name and at least one identifier we can use to find
+                your data: the phone number, email address, or Facebook /
+                Instagram name you used to contact us.
+              </li>
+              <li>
+                We may ask you to confirm the request from the same account or
+                number, to make sure we are deleting the right person&rsquo;s
+                data.
+              </li>
+              <li>
+                We will delete your data within <strong>30 days</strong> and
+                send you a confirmation once it is done.
+              </li>
+            </ol>
+
+            <h3>Removing access on Facebook</h3>
+            <p>
+              If you connected to one of our apps through Facebook, you can also
+              remove it yourself: go to <strong
+                >Facebook &rarr; Settings &amp; privacy &rarr; Settings &rarr;
+                Apps and websites</strong
+              >, find the Sahabat Export app, and select <strong>Remove</strong
+              >. You can then send us a deletion request as described above to
+              delete data we already received.
+            </p>
+
+            <h3>What we may keep</h3>
+            <p>
+              We may keep a limited record of completed orders (such as invoice
+              number, amount, and date) where the law requires it for tax or
+              accounting purposes. This record is not used for marketing and is
+              deleted once the legal retention period ends.
+            </p>
+          </section>
+
+          <h2 id='children'>11. Children</h2>
+          <p>
+            Our services are not directed at children under 18, and we do not
+            knowingly collect personal data from them. If you believe a child
+            has given us personal data, contact us and we will delete it.
+          </p>
+
+          <h2 id='changes'>12. Changes to this policy</h2>
+          <p>
+            We may update this policy from time to time. The date at the top of
+            this page shows when it was last changed. If we make significant
+            changes, we will post a notice on our website.
+          </p>
+
+          <h2 id='contact'>13. Contact us</h2>
+          <address class='label-card'>
+            <dl>
+              <div class='label-row'>
+                <dt>Company</dt><dd>Sahabat Export</dd>
+              </div>
+              <div class='label-row'>
+                <dt>Email</dt><dd>
+                  <a href={`mailto:${email}`}>{email}</a>
+                </dd>
+              </div>
+              <div class='label-row'>
+                <dt>WhatsApp</dt><dd>
+                  <a href={whatsapp.href}>{whatsapp.label}</a>
+                </dd>
+              </div>
+              <div class='label-row'>
+                <dt>Website</dt><dd>
+                  <a href='https://www.sahabatexport.com'
+                    >www.sahabatexport.com</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </address>
+        </article>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .btn:hover .arrow {
+    transform: translateX(-3px);
+  }
+
+  .legal-hero {
+    background: var(--grad-navy);
+    color: var(--paper);
+    padding: clamp(2.8rem, 7vw, 4.5rem) 0 clamp(2.2rem, 5vw, 3rem);
+  }
+  .legal-hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-variation-settings: 'wdth' 78;
+    margin: 1rem 0 0.8rem;
+  }
+  .legal-meta {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    color: var(--grey-light);
+  }
+
+  .legal {
+    padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3.5rem, 8vw, 6rem);
+  }
+  .legal-grid {
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr);
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  .legal-toc {
+    position: sticky;
+    top: 6rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+  }
+  .toc-title {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    color: var(--grey);
+    margin-bottom: 0.8rem;
+  }
+  .legal-toc ol {
+    list-style: none;
+    border-left: 1px solid var(--line);
+  }
+  .legal-toc a {
+    display: block;
+    padding: 0.32rem 0 0.32rem 0.9rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .legal-toc a:hover {
+    color: var(--gold-text);
+  }
+
+  .legal-body {
+    max-width: 70ch;
+  }
+  .legal-body h2 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-variation-settings: 'wdth' 84;
+    margin: 2.6rem 0 0.9rem;
+    scroll-margin-top: 6rem;
+  }
+  .legal-body h3 {
+    font-family: var(--body);
+    text-transform: none;
+    font-variation-settings: normal;
+    font-weight: 700;
+    font-size: 1.08rem;
+    letter-spacing: 0;
+    line-height: 1.3;
+    margin: 1.5rem 0 0.5rem;
+  }
+  .legal-body p + p {
+    margin-top: 0.9rem;
+  }
+  .legal-body ul,
+  .legal-body ol {
+    padding-left: 1.3rem;
+    margin: 0.7rem 0;
+  }
+  .legal-body li + li {
+    margin-top: 0.4rem;
+  }
+  .legal-body li::marker {
+    color: var(--gold-text);
+  }
+  .intro {
+    font-size: 1.12rem;
+  }
+
+  .deletion {
+    margin-top: 2.8rem;
+    padding: clamp(1.4rem, 3vw, 2rem);
+    background: var(--paper-card);
+    border: 1px solid color-mix(in srgb, var(--gold) 55%, var(--line));
+    border-radius: 10px;
+    scroll-margin-top: 6rem;
+  }
+  .deletion h2 {
+    margin-top: 0.6rem;
+  }
+  .steps li {
+    padding-left: 0.3rem;
+  }
+
+  .label-card {
+    font-style: normal;
+    border: 2px dashed var(--navy);
+    border-radius: 6px;
+    padding: 1.2rem 1.4rem;
+    background: var(--paper-card);
+  }
+  .label-row {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 0.7rem;
+    padding: 0.4rem 0;
+  }
+  .label-row dt {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--grey);
+    padding-top: 0.15rem;
+  }
+  .label-row dd a {
+    word-break: break-word;
+  }
+
+  @media (max-width: 860px) {
+    .legal-grid {
+      grid-template-columns: 1fr;
+    }
+    .legal-toc {
+      position: static;
+    }
+  }
+</style>
